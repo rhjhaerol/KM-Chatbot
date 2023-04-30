@@ -1,1 +1,2 @@
 # KM-Chatbot
+Ini adalah proyek chatbot layanan akademik untuk program Kampus Merdeka yang dibangun menggunakan algoritme Long Short-Term Memory (LSTM) dan di-deploy menggunakan framework Flask. Chatbot ini dapat mengidentifikasi dan memberikan jawaban atas pertanyaan-pertanyaan yang berkaitan dengan program Kampus Merdeka seperti kampus mengajar, studi independen, magang, bangkit, pertukaran mahasiswa, KKNT, dan sebagainya.
