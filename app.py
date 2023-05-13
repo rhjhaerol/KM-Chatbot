@@ -20,12 +20,12 @@ lemmatizer = WordNetLemmatizer()
 le = LabelEncoder()
 
 from keras.models import load_model
-model = load_model('model-new/chat_model_good.h5')
-intents = json.loads(open('kampus_merdeka_new.json').read())
-words = pickle.load(open('model-new/words.pkl','rb'))
-classes = pickle.load(open('model-new/classes.pkl','rb'))
-tokenizer = pickle.load(open('model-new/tokenizers.pkl','rb'))
-input_shape = 14
+model = load_model('model-complete/model_chatbot.h5')
+intents = json.loads(open('kampus_merdeka_cmplt.json').read())
+words = pickle.load(open('model-complete/words.pkl','rb'))
+classes = pickle.load(open('model-complete/classes.pkl','rb'))
+tokenizer = pickle.load(open('model-complete/tokenizers.pkl','rb'))
+input_shape = 16
 
 le.fit(classes)
 
