@@ -9,18 +9,18 @@ from nltk.stem import WordNetLemmatizer
 from sklearn.preprocessing import LabelEncoder
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
-# Package sentence tokenizer
-nltk.download('punkt')
-# Package lemmatization
-nltk.download('wordnet')
-# Package multilingual wordnet data
-nltk.download('omw-1.4')
+# # Package sentence tokenizer
+# nltk.download('punkt')
+# # Package lemmatization
+# nltk.download('wordnet')
+# # Package multilingual wordnet data
+# nltk.download('omw-1.4')
 
 lemmatizer = WordNetLemmatizer()
 le = LabelEncoder()
 
 from keras.models import load_model
-model = load_model('model-complete/model_chatbot.h5')
+model = load_model('model-complete/model_chatbot.h5', compile=False)
 intents = json.loads(open('kampus_merdeka_cmplt.json').read())
 words = pickle.load(open('model-complete/words.pkl','rb'))
 classes = pickle.load(open('model-complete/classes.pkl','rb'))
